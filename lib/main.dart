@@ -1,25 +1,20 @@
 import "package:flutter/material.dart";
 
-import "large_text.dart";
+import "dice_roller.dart";
 import "gradient_container.dart";
 
 void main() {
-  runApp(const MaterialApp(
-    home: Scaffold(
-      body: GradientContainer(
-        colors: [Colors.blue, Colors.green],
-        alignments: {
-          "begin": Alignment.topLeft,
-          "end": Alignment.bottomRight
-        },
-        child: Center(
-          child: LargeText(
-              text: "Hello World !",
-              color: Colors.white
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: GradientContainer(
+          colors: [Color.fromARGB(255, 33, 5, 109), Color.fromARGB(255, 68, 21, 149)],
+          alignments: {"begin": Alignment.topLeft, "end": Alignment.bottomRight},
+          child: Center(
+            child: DiceRoller(),
           ),
         ),
       ),
     ),
-  ));
+  );
 }
-
