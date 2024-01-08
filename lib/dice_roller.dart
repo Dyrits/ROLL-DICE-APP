@@ -15,9 +15,10 @@ class DiceRoller extends StatefulWidget {
 
 class _DiceRollerState extends State<DiceRoller> {
   String asset = "assets/images/dice-1.png";
+  Random random = Random();
 
   void roll() {
-    int value = Random().nextInt(6) + 1;
+    int value = random.nextInt(6) + 1;
     if (kDebugMode) {
       print("Dice rolled the number $value.");
     }
