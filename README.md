@@ -1,6 +1,6 @@
-# roll_dice_app
+# Roll Dice App
 
-Roll Dice App
+Very simple app that rolls a dice when the user presses a button.
 
 ## Getting Started
 
