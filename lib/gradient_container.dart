@@ -1,10 +1,5 @@
 import "package:flutter/material.dart";
 
-const Map<String, Alignment> alignments = {
-  "begin": Alignment.topLeft,
-  "end": Alignment.bottomRight
-};
-
 class GradientContainer extends StatelessWidget {
   final List<Color> colors;
   final Map<String, Alignment> alignments;
